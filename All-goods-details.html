@@ -5,10 +5,8 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Indian Live Cargo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -284,72 +282,165 @@
                         <div>    
                             <h5 class="card-title mb-0">Goods Details</h5>
                         </div>    
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Reset Selected</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Transfer Goods</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">+ Add Goods Details</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">+ Add Cargo</button></a>
+                         <a href="#"><button type="button" class="btn btn-info waves-effect waves-light p-1">Reset Selected</button></a>
+                         <a href="#"><button type="button"  class="btn btn-info waves-effect waves-light p-1" data-bs-toggle="modal" data-bs-target="#transfergoods">Transfer Goods</button></a>
+                         <a href="Add-goods-details.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">+ Add Goods Details</button></a>
+                         <a href="#"><button type="button"  class="btn btn-info waves-effect waves-light p-1" data-bs-toggle="modal" data-bs-target="#Addcargo">+ Add Cargo</button></a>
                          <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Print All</button></a>
                          <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">New Print</button></a>
                          <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Print Selected</button></a>
                          <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Delete</button></a>
 
                         </div>
-                     
-                        <div class="card-body">
-                         <div class="table-responsive">
-                            <!-- Striped Rows -->
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr >
-                                        <th>Filter By</th>
-                                        <th>Export as Sorting List</th>
-                                        <th>Export as OGM</th>
-                                        <th>Date</th>
-                                        <th>Filter</th>
-                                        <th>Value</th>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th><button type="button" class="btn btn-light waves-effect">Download Sorting List</button></th>
-                                        <th><button type="button" class="btn btn-light waves-effect">Download OGM</button></th>
-                                        <th><input type="text" placeholder="search driver name" size="14em"></th>
-                                        <th><select aria-label="Default select example">
-                                            <option value="1">All</option>
-                                            <option value="2">data1</option>
-                                            <option value="3">data2</option>
-                                        </select></th>
-                                        <th><input type="text" placeholder="search..." size="14em"><i class="bx bx-search-alt-2" style="background-color: antiquewhite;"></i></th>
-                                    </tr>
-                                    <tr>
-                                        <th> <p>Total Count:</p></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th><div>Trip No : <button type="button" class="btn btn-light waves-effect" style="border:solid 1px;">Reset</button>
-                                        </div>
-                                             <div data-bs-spy="scroll" data-bs-target="#navbar-example2"  data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-0 rounded-0" tabindex="0" style="width: 10em;height: 8em;">
-                                          
-                                           <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ms-3 my-1" href="#"> SDASSDDF</a>
-                                            <a class="nav-link ms-3 my-1">SGSDGDFG</a>
-                                            <a class="nav-link ms-3 my-1"> SDASSDDF</a>
-                                            <a class="nav-link ms-3 my-1">SGSDGDFG</a>
-                                            <a class="nav-link ms-3 my-1"> SDASSDDF</a>
-                                            <a class="nav-link ms-3 my-1">SGSDGDFG</a>
-                                            <a class="nav-link ms-3 my-1"> SDASSDDF</a>
-                                            <a class="nav-link ms-3 my-1">SGSDGDFG</a>
-                                            <a class="nav-link ms-3 my-1"> SDASSDDF</a>
-                                            <a class="nav-link ms-3 my-1">SGSDGDFG</a>
-                                          </nav>
-                                          </div></th>
-                                        
-                                    </tr>
-                                    </thead>
-                                     
-                                </table>
-                             </div>
+                        <!--Modal-->
+                       
+                        <div class="modal fade" id="transfergoods" tabindex="-1" aria-labelledby="exampleModalgridLabel" aria-modal="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalgridLabel">Transfer Goods</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="javascript:void(0);">
+                                            <div class="row g-3">
+                                                
+                                                <div style="padding-left: 5em; padding-top: 2em;">
+                                                <div  style="width: 18em; display:inline-block;">
+                                                    <label for="formtextInput" class="form-label">Transfer From</label>
+                                                    <select class="form-select mb-3" aria-label="Default select example">
+                                                        <option value="1">calicut</option>
+                                                        <option value="2">calicut</option>
+                                                    </select>
+                                                </div>
+                                                <div style="width: 18em; display:inline-block;">
+                                                    <label for="exampleInputdate" class="form-label">Transfer To</label>
+                                                    <select class="form-select mb-3" aria-label="Default select example">
+                                                        <option value="1">calicut</option>
+                                                        <option value="2">calicut</option>
+                                                    </select>                                                   </div>
+                                                   <div  style="width: 18em; display:inline-block;">
+                                                    <label for="formtextInput" class="form-label">vehicles</label>
+                                                    <select class="form-select mb-3" aria-label="Default select example">
+                                                        <option value="1">kl483jkfr33</option>
+                                                        <option value="2">kl483jkfr33</option>
+                                                    </select>                                                </div>
+                                               
+                                            </div>
+                                                <div class="col-lg-12">
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div><!--end col-->
+                                            </div><!--end row-->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="modal fade" id="Addcargo" tabindex="-1" aria-labelledby="exampleModalgridLabel" aria-modal="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalgridLabel">Add Cargo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="javascript:void(0);">
+                                            <div class="row g-3">
+                                                
+                                                <div style="padding-left: 5em; padding-top: 2em;">
+                                                <div  style="width: 18em; display:inline-block;">
+                                                    <label for="formtextInput" class="form-label">Trip Sheets</label>
+                                                    <select class="form-select mb-3" aria-label="Default select example">
+                                                        <option value="1">11</option>
+                                                        <option value="2">22</option>
+                                                    </select>
+                                                </div>
+                                             
+                                               
+                                            </div>
+                                                <div class="col-lg-12">
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div><!--end col-->
+                                            </div><!--end row-->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div style="display: flex;border: 1px solid;">
+                                    <div style="display:inline-block; margin-top: 1em;">
+                                        <h6>Filter By</h6>
+                                    </div> 
+                                    <div style="display:inline-block;padding-left: 3em; margin-top: 1em;">
+                                        <h6>Export as Sorting List</h6>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download sorting list</button>
+                                    </div> 
+                                     <div style="display:inline-block; margin-top: 1em;">
+                                        <h6>Export as OGM</h6>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download OGM</button>
+                                    </div>
+                                    
+                                    <div style="display:inline-block;padding-left: 1em; margin-top: 1em;">
+                                        <h6>Date</h6>
+                                        <input type="date" class="form-control" id="exampleInputdate">
+    
+                                    </div>
+                                    <div style="display:inline-block;padding-left: 1em; margin-top: 1em;">
+                                        <h6>Filter</h6>
+                                        <select class="form-select mb-3" aria-label="Default select example">
+                                            <option value="1">Bike</option>
+                                            <option value="2">Truck</option>
+                                        </select>
+                                    </div>
+                                    <div style=" margin-top: 1em;">
+                                        <h6>Value</h6>
+                                        <div style="display: flex;padding-left: 1em;">
+                                        <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name.." style="display: inline-block;">
+                                        <div style="width: 44px; height: 43px; padding: 8px;background-color: antiquewhite;">
+                                        <i class="bx bx-search-alt-2" style="justify-items: center;"></i>
+                                        </div>  
+                                    </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;border: 1px solid; margin-top: 1px;">
+                                    <div style="display:block;padding-left:30em; margin-top: 1em;">
+                                        <div style="display: flex;">
+                                        <h6>Trip N.o</h6>
+                                        <button type="button" class="btn btn-outline-info waves-effect waves-light" style="height:2em;">Reset</button>                                        </div>
+                                        <select name="" id="" size="5" style="width: 8em; text-align: center;">
+                                            <option value="1">Bffike</option>
+                                            <option value="2">Trudgdgck</option>
+                                            <option value="1">Bikdgdgdgde</option>
+                                            <option value="2">Trudgdgdgck</option>
+                                            <option value="1">Bikgdgdge</option>
+                                            <option value="2">Trdgdgduck</option>
+                                            <option value="1">Bikgdgdgfe</option>
+                                            <option value="2">Trudgdgck</option>
+                                        </select>
+                                 </div>
+                                    <div style="display:inline-block;padding-left: 3em; margin-top: 1em;">
+                                        <h6>Download</h6>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download</button>
+                                    </div> 
+                                    <div style="display:inline-block; margin-top: 1em;">
+                                        <h6>Export as Loading List</h6>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download Loading list</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         
-                           
                   
                                     <div class="card-body">
                                         <div class="table-responsive">

@@ -5,10 +5,8 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Indian Live Cargo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -28,7 +26,18 @@
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+    .thbig {
+        border: 1px solid;
+    }
+    th{
+        border: 1px solid;
+    }
+    td{
+        border: 1px solid;
+    }
+</style>
 </head>
 
 <body>
@@ -106,7 +115,7 @@
 </header>
 
         <!-- ========== App Menu ========== -->
-        <div class="app-menu navbar-menu">
+        <div class="app-menu navbar-menu" style="background-color: black;">
             <!-- LOGO -->
             <div class="navbar-brand-box" style="background-color: aliceblue;">
                 <!-- Dark Logo-->
@@ -273,8 +282,157 @@
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
-        <div class="main-content">
+        <div class="main-content" style="padding-top: 8em;">
 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                    
+                        <div class="card-header d-flex justify-content-between">
+                        <div style="height: 5em;">    
+                            <h3 class="card-title mb-0" style="margin: 2em;">Goods Not in Tripsheet </h3>
+                        </div>    
+                        </div>
+                        <div class="card-body">
+                        <div class="table-responsive">
+                            <div style="display: flex;">
+                               
+                                <div style="display:block;padding-left: 3em;">
+                                    <h6>Trip N.o</h6>
+                                    <select name="" id="" size="5" style="width: 8em; text-align: center;">
+                                        <option value="1">Bffike</option>
+                                        <option value="2">Trudgdgck</option>
+                                        <option value="1">Bikdgdgdgde</option>
+                                        <option value="2">Trudgdgdgck</option>
+                                        <option value="1">Bikgdgdge</option>
+                                        <option value="2">Trdgdgduck</option>
+                                        <option value="1">Bikgdgdgfe</option>
+                                        <option value="2">Trudgdgck</option>
+                                    </select>
+                                </div>
+                                <div style="display:inline-block;padding-left: 1em;">
+                                    <h6>Exports</h6>
+                                    <button>Download Goods Not in Tripsheet</button>
+                                </div>
+                                <div style="display:inline-block;padding-left: 1em;">
+                                    <h6>Date</h6>
+                                    <input type="date" class="form-control" id="exampleInputdate">
+
+                                </div>
+                                <div style="display:inline-block;padding-left: 1em;">
+                                    <h6>Filter</h6>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option value="1">Bike</option>
+                                        <option value="2">Truck</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <h6>Value</h6>
+                                    <div style="display: flex;padding-left: 1em;">
+                                    <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name.." style="display: inline-block;">
+                                    <div style="width: 44px; height: 43px; padding: 8px;background-color: antiquewhite;">
+                                    <i class="bx bx-search-alt-2" style="justify-items: center;"></i>
+                                    </div>  
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        </div>
+
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <!-- Striped Rows -->
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr class="thbig">
+                                            <th>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                </div></th>
+                                            <th>SL NO</th>
+                                            <th>TRANSFER STATUS</th>
+                                            <th>COMPANY</th>
+                                            <th>SHIP.NAME</th>
+                                            <th>ORIGIN</th>
+                                            <th>TRACKING NUMBER</th>
+                                            <th>INVOICE</th>
+                                            <th>TRIP NO</th>
+                                            <th>PCS</th>
+                                            <th>WEIGHT</th>
+                                            <th>RE WEIGHT</th>
+                                            <th>RECIEVED PCS</th>
+                                            <th>SENDER ADDRESS</th>
+                                            <th>RECIEVER ADDRESS</th>
+                                            <th>PHONE</th>
+                                            <th>STATE</th>
+                                            <th>DISTRICT</th>
+                                            <th>PINCODE</th>
+                                            <th>DESC. OF GOODS</th>
+                                            <th>RECIEVED AT HUB</th>
+                                            <th>CONNECTING DATE</th>
+                                            <th>RECIEVED AT BRANCH</th>
+                                            <th>VENDOR</th>
+                                            <th>CONTACT NUMBER</th>
+                                            <th>DOCKET</th>
+                                            <th>STATUS</th>
+                                            <th>REMARK</th>
+                                            <th>SENDING DATE</th>
+                                            <th>RECCIEV.DATE</th>
+                                            <th>ACTIONS</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tablebody">
+                                      
+                                        <tr>
+                                            <td><div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                            </div></td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="pagination" style="margin: 2em;"></div>
+                        </div>
+                       
+                        
+
+                    
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+           
             
 
             <footer class="footer">
@@ -293,18 +451,58 @@
             </footer>
         </div>
         <!-- end main content-->
+<!-- Grids in modals -->
+
+  
 
     </div>
     <!-- END layout-wrapper -->
 
 
 
-   
+    <script>
+        const tableBody = document.getElementById("tablebody");
+        const rows = tableBody.querySelectorAll("tr");
+        const perPage = 10;
+        let currentPage = 1;
+    
+        function displayData(page) {
+            tableBody.innerHTML = "";
+            const start = (page - 1) * perPage;
+            const end = Math.min(rows.length, start + perPage);
+    
+            for (let i = start; i < end; i++) {
+                tableBody.appendChild(rows[i].cloneNode(true));
+            }
+        }
+    
+        function updatePagination() {
+            const totalPages = Math.ceil(rows.length / perPage);
+            const paginationDiv = document.getElementById("pagination");
+            paginationDiv.innerHTML = "";
+    
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement("button");
+                button.textContent = i;
+                button.addEventListener("click", () => {
+                    currentPage = i;
+                    displayData(currentPage);
+                });
+                paginationDiv.appendChild(button);
+            }
+        }
+    
+        // Initial display
+        displayData(currentPage);
+        updatePagination();
+    </script>
    
 
    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JAVASCRIPT -->
+
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
@@ -330,5 +528,4 @@
 </body>
 
 
-<!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Oct 2023 05:43:47 GMT -->
 </html>
