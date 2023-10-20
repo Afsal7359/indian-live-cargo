@@ -299,41 +299,45 @@
                                
                                 <div style="display:block;padding-left: 3em;">
                                     <h6>Trip N.o</h6>
-                                    <select name="" id="" size="5" style="width: 8em; text-align: center;">
-                                        <option value="1">Bffike</option>
-                                        <option value="2">Trudgdgck</option>
-                                        <option value="1">Bikdgdgdgde</option>
-                                        <option value="2">Trudgdgdgck</option>
-                                        <option value="1">Bikgdgdge</option>
-                                        <option value="2">Trdgdgduck</option>
-                                        <option value="1">Bikgdgdgfe</option>
-                                        <option value="2">Trudgdgck</option>
-                                    </select>
+                                    <div class="col-sm-auto">
+                                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                        <select class="form-select shadow" size="4" id="autoSizingSelect">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            
+                                        </select>
+                                    </div>
                                 </div>
                                 <div style="display:inline-block;padding-left: 1em;">
                                     <h6>Exports</h6>
-                                    <button>Download Goods Not in Tripsheet</button>
+                                    <button class="btn rounded-pill btn-light waves-effect shadow p-2">Download Goods Not in Tripsheet</button>
                                 </div>
                                 <div style="display:inline-block;padding-left: 1em;">
                                     <h6>Date</h6>
-                                    <input type="date" class="form-control" id="exampleInputdate">
+                                    <input type="date" class="form-control shadow py-2" id="exampleInputdate">
 
                                 </div>
                                 <div style="display:inline-block;padding-left: 1em;">
                                     <h6>Filter</h6>
-                                    <select class="form-select mb-3" aria-label="Default select example">
+                                    <select class="form-select mb-3 shadow py-2" aria-label="Default select example">
                                         <option value="1">Bike</option>
                                         <option value="2">Truck</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div style="display:inline-block;padding-left: 2em;">
                                     <h6>Value</h6>
-                                    <div style="display: flex;padding-left: 1em;">
-                                    <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name.." style="display: inline-block;">
-                                    <div style="width: 44px; height: 43px; padding: 8px;background-color: antiquewhite;">
-                                    <i class="bx bx-search-alt-2" style="justify-items: center;"></i>
-                                    </div>  
-                                </div>
+                                    <div style="display: flex;">
+                                        <input type="text" class="form-control shadow py-1" id="formtextInput" placeholder="Driver Name.." style="display: inline-block; ">
+                                            <div class="col-auto" style="background-color:#000000;">
+                                                <button type="button" class="btn btn-soft-info btn-icon waves-effect waves-light layout-rightside-btn shadow"><i class="bx bx-search-alt-2" style="color: aliceblue;"></i></button>
+                                            
+                                            </div> 
+                                    </div>
                                 </div>
                             </div>
                            
@@ -423,7 +427,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div id="pagination" style="margin: 2em;"></div>
+                            <div id="pagination"  style="margin: 2em;"></div>
                         </div>
                        
                         

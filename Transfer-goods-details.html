@@ -289,9 +289,10 @@
                     <div class="card">
                     
                         <div class="card-header d-flex justify-content-between">
-                        <div style="height: 5em;">    
-                            <h3 class="card-title mb-0" style="margin: 2em;">Transfer Goods Details</h3>
+                        <div class="p-3">    
+                            <h3 class="card-title mb-0">Transfer Pending Goods</h3>
                         </div>    
+                      
                         </div>
                         <div class="card-body">
                         <div class="table-responsive">
@@ -301,25 +302,28 @@
                                 </div>
                                 <div style="display:block; padding-left: 20em;">
                                     <h6>Trip N.o</h6>
-                                    <select name="" id="" size="5" style="width: 8em; text-align: center;">
-                                        <option value="1">Bffike</option>
-                                        <option value="2">Trudgdgck</option>
-                                        <option value="1">Bikdgdgdgde</option>
-                                        <option value="2">Trudgdgdgck</option>
-                                        <option value="1">Bikgdgdge</option>
-                                        <option value="2">Trdgdgduck</option>
-                                        <option value="1">Bikgdgdgfe</option>
-                                        <option value="2">Trudgdgck</option>
-                                    </select>
+                                    <div class="col-sm-auto">
+                                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                        <select class="form-select shadow" size="4" id="autoSizingSelect">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            
+                                        </select>
+                                    </div>
                                 </div>
                                 <div style="display:inline-block;">
                                     <h6>Date</h6>
-                                    <input type="date" class="form-control" id="exampleInputdate">
+                                    <input type="date" class="form-control shadow p-2" id="exampleInputdate" >
 
                                 </div>
                                 <div style="display:inline-block;">
                                     <h6>Filter</h6>
-                                    <select class="form-select mb-3" aria-label="Default select example">
+                                    <select class="form-select shadow p-2" style="width: 7em;" aria-label="Default select example">
                                         <option value="1">Bike</option>
                                         <option value="2">Truck</option>
                                     </select>
@@ -327,10 +331,11 @@
                                 <div>
                                     <h6>Value</h6>
                                     <div style="display: flex;">
-                                    <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name.." style="display: inline-block;">
-                                    <div style="width: 44px; height: 43px; padding: 8px;background-color: antiquewhite;">
-                                    <i class="bx bx-search-alt-2" style="justify-items: center;"></i>
-                                    </div>  
+                                    <input type="text" class="form-control shadow" id="formtextInput" placeholder="Driver Name.." style="display: inline-block; ">
+                                        <div class="col-auto" style="background-color:#000000;">
+                                            <button type="button" class="btn btn-soft-info btn-icon waves-effect waves-light layout-rightside-btn shadow"><i class="bx bx-search-alt-2" style="color: aliceblue;"></i></button>
+                                        
+                                        </div> 
                                 </div>
                                 </div>
                             </div>
@@ -382,7 +387,111 @@
                                     </tr>
                                     </thead>
                                     <tbody id="tablebody">
-                                      
+                                        <tr>
+                                            <td><div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                            </div></td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td><a href="#"><i type="button"  class="bx bxs-edit" data-bs-toggle="modal" data-bs-target="#editmodal"></i></a>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                            </div></td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td><a href="#"><i type="button"  class="bx bxs-edit" data-bs-toggle="modal" data-bs-target="#editmodal"></i></a>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                            </div></td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td><a href="#"><i type="button"  class="bx bxs-edit" data-bs-toggle="modal" data-bs-target="#editmodal"></i></a>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                            <td>sdsfs</td>
+                                            <td>gfgfggggg</td>
+                                            <td>sfeswdgfrfgrfdgg</td>
+                                            <td>gfsdgfggs</td>
+                                            <td>sdsgfg</td>
+                                        </tr>
                                         <tr>
                                             <td><div class="form-check mb-2">
                                                 <input class="form-check-input" type="checkbox" id="formCheck1">

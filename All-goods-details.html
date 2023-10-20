@@ -278,18 +278,18 @@
                 <div class="col-lg-12">
                     <div class="card">
                     
-                        <div class="card-header d-flex justify-content-between table-responsive">
+                        <div class="card-header d-flex justify-content-around table-responsive " style="height: 5em;">
                         <div>    
-                            <h5 class="card-title mb-0">Goods Details</h5>
+                            <h5 class="card-title mb-0 m-1">Goods Details</h5>
                         </div>    
-                         <a href="#"><button type="button" class="btn btn-info waves-effect waves-light p-1">Reset Selected</button></a>
-                         <a href="#"><button type="button"  class="btn btn-info waves-effect waves-light p-1" data-bs-toggle="modal" data-bs-target="#transfergoods">Transfer Goods</button></a>
-                         <a href="Add-goods-details.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">+ Add Goods Details</button></a>
-                         <a href="#"><button type="button"  class="btn btn-info waves-effect waves-light p-1" data-bs-toggle="modal" data-bs-target="#Addcargo">+ Add Cargo</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Print All</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">New Print</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Print Selected</button></a>
-                         <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light p-1">Delete</button></a>
+                         <a href="#"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1  shadow">Reset Selected</button></a>
+                         <a href="#"><button type="button"  class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow" data-bs-toggle="modal" data-bs-target="#transfergoods">Transfer Goods</button></a>
+                         <a href="Add-goods-details.html"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow">+ Add Goods Details</button></a>
+                         <a href="#"><button type="button"  class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow" data-bs-toggle="modal" data-bs-target="#Addcargo">+ Add Cargo</button></a>
+                         <a href="Add-vehicles.html"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow">Print All</button></a>
+                         <a href="Add-vehicles.html"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow">New Print</button></a>
+                         <a href="Add-vehicles.html"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow">Print Selected</button></a>
+                         <a href="Add-vehicles.html"><button type="button" class="btn rounded-pill btn-dark waves-effect waves-light p-1 shadow">Delete</button></a>
 
                         </div>
                         <!--Modal-->
@@ -378,64 +378,70 @@
 
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div style="display: flex;border: 1px solid;">
+                                <div style="display: flex;">
                                     <div style="display:inline-block; margin-top: 1em;">
                                         <h6>Filter By</h6>
                                     </div> 
                                     <div style="display:inline-block;padding-left: 3em; margin-top: 1em;">
                                         <h6>Export as Sorting List</h6>
-                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download sorting list</button>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect border-0 shadow">Download sorting list</button>
                                     </div> 
                                      <div style="display:inline-block; margin-top: 1em;">
                                         <h6>Export as OGM</h6>
-                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download OGM</button>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect shadow">Download OGM</button>
                                     </div>
                                     
                                     <div style="display:inline-block;padding-left: 1em; margin-top: 1em;">
                                         <h6>Date</h6>
-                                        <input type="date" class="form-control" id="exampleInputdate">
+                                        <input type="date" class="form-control shadow" id="exampleInputdate">
     
                                     </div>
                                     <div style="display:inline-block;padding-left: 1em; margin-top: 1em;">
                                         <h6>Filter</h6>
-                                        <select class="form-select mb-3" aria-label="Default select example">
+                                        <select class="form-select mb-3 shadow" aria-label="Default select example">
                                             <option value="1">Bike</option>
                                             <option value="2">Truck</option>
                                         </select>
                                     </div>
-                                    <div style=" margin-top: 1em;">
+                                    <div style="display:inline-block;padding-left: 1em; margin-top: 1em;">
                                         <h6>Value</h6>
-                                        <div style="display: flex;padding-left: 1em;">
-                                        <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name.." style="display: inline-block;">
-                                        <div style="width: 44px; height: 43px; padding: 8px;background-color: antiquewhite;">
-                                        <i class="bx bx-search-alt-2" style="justify-items: center;"></i>
-                                        </div>  
+                                        <input type="text" placeholder="Search" class="form-control   shadow" >
+                                        
+                                    </div>
+                                    <div style="display:inline-block;padding-left: 1em; margin-top: 2.5em;">
+                                    <div class="col-auto" style="background-color:#000000;">
+                                        <button type="button" class="btn btn-soft-info btn-icon waves-effect waves-light layout-rightside-btn shadow"><i class="bx bx-search-alt-2" style="color: aliceblue;"></i></button>
                                     </div>
                                     </div>
                                 </div>
-                                <div style="display: flex;border: 1px solid; margin-top: 1px;">
+                                <div style="display: flex; margin-top: 1px;">
                                     <div style="display:block;padding-left:30em; margin-top: 1em;">
                                         <div style="display: flex;">
+                                    <div class="p-2">
                                         <h6>Trip N.o</h6>
-                                        <button type="button" class="btn btn-outline-info waves-effect waves-light" style="height:2em;">Reset</button>                                        </div>
-                                        <select name="" id="" size="5" style="width: 8em; text-align: center;">
-                                            <option value="1">Bffike</option>
-                                            <option value="2">Trudgdgck</option>
-                                            <option value="1">Bikdgdgdgde</option>
-                                            <option value="2">Trudgdgdgck</option>
-                                            <option value="1">Bikgdgdge</option>
-                                            <option value="2">Trdgdgduck</option>
-                                            <option value="1">Bikgdgdgfe</option>
-                                            <option value="2">Trudgdgck</option>
-                                        </select>
+                                    </div>
+                                        <button type="button"  class="btn btn-ghost-dark waves-effect waves-light " style="border: 1px solid;">Reset</button>                                        </div>
+                                       <div class="col-sm-auto">
+                                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                            <select class="form-select shadow" size="4" id="autoSizingSelect">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                                
+                                            </select>
+                                        </div>
                                  </div>
                                     <div style="display:inline-block;padding-left: 3em; margin-top: 1em;">
                                         <h6>Download</h6>
-                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download</button>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect border-1 shadow">Download</button>
                                     </div> 
                                     <div style="display:inline-block; margin-top: 1em;">
                                         <h6>Export as Loading List</h6>
-                                        <button type="button" class="btn rounded-pill btn-light waves-effect">Download Loading list</button>
+                                        <button type="button" class="btn rounded-pill btn-light waves-effect shadow">Download Loading list</button>
                                     </div>
                                 </div>
                             </div>
@@ -446,50 +452,50 @@
                                         <div class="table-responsive">
                                            <!-- Striped Rows -->
                                       
-                                           <table class="table table-striped">
+                                           <table class="table table-striped" style="border: 1px solid;">
                                                <thead>
-                                    <tr>
-                                            <th>VEHICLE NO</th>
-                                            <th>VEHICLE TYPE</th>
-                                            <th>DRIVER NAME</th>
-                                            <th>CONTACT NUMBER</th>
-                                            <th>STATUS</th>
-                                            <th>ACTIONS</th>
+                                    <tr class="tabledata">
+                                            <th class="tabledata">VEHICLE NO</th>
+                                            <th class="tabledata">VEHICLE TYPE</th>
+                                            <th class="tabledata">DRIVER NAME</th>
+                                            <th class="tabledata">CONTACT NUMBER</th>
+                                            <th class="tabledata">STATUS</th>
+                                            <th class="tabledata">ACTIONS</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tabledata">
                                     <tr>
-                                           <td>KL33 P 2635</td>  
-                                            <td>Truck</td> 
-                                            <td>KABEER DOST</td> 
-                                            <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                                           <td class="tabledata" >KL33 P 2635</td>  
+                                            <td class="tabledata">Truck</td> 
+                                            <td class="tabledata">KABEER DOST</td> 
+                                            <td class="tabledata">7510685178</td> 
+                                        <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                        <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-warning">Waiting</span></td>
-                                        <td>edit</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td>edit</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td>edit</td>
-                                    </tr>
+                                        <td class="tabledata" >KL33 P 2635</td>  
+                                         <td class="tabledata">Truck</td> 
+                                         <td class="tabledata">KABEER DOST</td> 
+                                         <td class="tabledata">7510685178</td> 
+                                     <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                     <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="tabledata" >KL33 P 2635</td>  
+                                     <td class="tabledata">Truck</td> 
+                                     <td class="tabledata">KABEER DOST</td> 
+                                     <td class="tabledata">7510685178</td> 
+                                 <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                 <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                             </tr>
+                             <tr>
+                                <td class="tabledata" >KL33 P 2635</td>  
+                                 <td class="tabledata">Truck</td> 
+                                 <td class="tabledata">KABEER DOST</td> 
+                                 <td class="tabledata">7510685178</td> 
+                             <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                             <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                         </tr>
                                 </tbody>
                             </table>
                             <div id="pagination" style="margin: 3em;">

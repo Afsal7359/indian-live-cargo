@@ -278,15 +278,14 @@
                 <div class="col-lg-12">
                     <div class="card">
                     
-                        <div class="card-header d-flex justify-content-between">
+                        <div class="card-header d-flex justify-content-between m-1">
                         <div>    
-                            <h5 class="card-title mb-0">List of All Vehicles</h5>
+                            <h5 class="-title mb-1 m-1">List of All Vehicles</h5>
                         </div>    
-                        <div class="justify-content-end">
-                            <a href="Add-vehicles.html"><button type="button" class="btn btn-info waves-effect waves-light">+ Add Vehicle</button></a>
+                        <div class=" d-inline-block">
+                            <a href="Add-vehicles.html" type="button" class="btn rounded-pill btn-dark waves-effect waves-light">Add Vehicles</a>                        
                         </div>
                         </div>
-                     
                         <div class="card-body">
                          <div class="table-responsive">
                             <!-- Striped Rows -->
@@ -302,18 +301,38 @@
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th><input class="p-1" type="text" placeholder="search vehicle no." size="12.5em"></th>
-                                        <th><select class="p-1"  aria-label="Default select example">
-                                            <option value="1">Bike</option>
-                                            <option value="2">Truck</option>
-                                        </select></th>
-                                        <th><input  class="p-1" type="text" placeholder="search driver name" size="14em"></th>
-                                        <th><input  class="p-1" type="text" placeholder="search contact no" size="13.5em"></th>
-                                        <th><select class="p-1"  aria-label="Default select example">
-                                            <option value="1">Active</option>
-                                            <option value="2">Inactive</option>
-                                        </select></th>
-                                        <th><i class="bx bx-search-alt-2" style="background-color: antiquewhite;"></i></th>
+                                        <th><input type="text"placeholder="Search" class="form-control border-0 dash-filter-picker shadow" >
+                                        </th>
+
+                                        <th><div class="col-sm-auto">
+                                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                            <select class="form-select shadow" id="autoSizingSelect">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div></th>
+                                        <th><input type="text" placeholder="Search" class="form-control border-0 dash-filter-picker shadow" data-provider="flatpickr" data-range-date="true" data-date-format="d M, Y" data-deafult-date="01 Jan 2022 to 31 Jan 2022">
+                                        </th>
+                                        <th><input type="text" placeholder="Search" class="form-control border-0 dash-filter-picker shadow" data-provider="flatpickr" data-range-date="true" data-date-format="d M, Y" data-deafult-date="01 Jan 2022 to 31 Jan 2022">
+                                        </th>
+
+                                        <th><div class="col-sm-auto">
+                                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                            <select class="form-select shadow" id="autoSizingSelect">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                   </th>
+                                   <th>
+                                    <div class="col-auto" style="background-color:#000000;">
+                                        <button type="button" class="btn btn-soft-info btn-icon waves-effect waves-light layout-rightside-btn"><i class="bx bx-search-alt-2" style="color: aliceblue;"></i></button>
+                                    </div>
+                                </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -323,52 +342,52 @@
                                 <div class="card-body">
                                     <div class="table-responsive">
                                        <!-- Striped Rows -->
-                                       <table class="table table-striped">
-                                           <thead>
+                                       <table class="table table-striped"style="border:1px solid;">
+                                           <thead style="border:1px solid;">
                                     <tr>
-                                            <th>VEHICLE NO</th>
-                                            <th>VEHICLE TYPE</th>
-                                            <th>DRIVER NAME</th>
-                                            <th>CONTACT NUMBER</th>
-                                            <th>STATUS</th>
-                                            <th>ACTIONS</th>
+                                            <th class="tabledata">VEHICLE NO</th>
+                                            <th class="tabledata">VEHICLE TYPE</th>
+                                            <th class="tabledata">DRIVER NAME</th>
+                                            <th class="tabledata">CONTACT NUMBER</th>
+                                            <th class="tabledata">STATUS</th>
+                                            <th class="tabledata">ACTIONS</th>
                                     </tr>
 
                                 </thead>
 
                                 <tbody id="tabledata">
                                     <tr>
-                                           <td>KL33 P 2635</td>  
-                                            <td>Truck</td> 
-                                            <td>KABEER DOST</td> 
-                                            <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                                           <td class="tabledata">KL33 P 2635</td>  
+                                            <td class="tabledata">Truck</td> 
+                                            <td class="tabledata">KABEER DOST</td> 
+                                            <td class="tabledata">7510685178</td> 
+                                        <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                        <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-warning">Waiting</span></td>
-                                        <td>edit</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td>edit</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KL33 P 2635</td>  
-                                        <td>Truck</td> 
-                                        <td>KABEER DOST</td> 
-                                        <td>7510685178</td> 
-                                        <td><span class="badge bg-success">Confirmed</span></td>
-                                        <td>edit</td>
-                                    </tr>
+                                        <td class="tabledata">KL33 P 2635</td>  
+                                         <td class="tabledata">Truck</td> 
+                                         <td class="tabledata">KABEER DOST</td> 
+                                         <td class="tabledata">7510685178</td> 
+                                     <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                     <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="tabledata">KL33 P 2635</td>  
+                                     <td class="tabledata">Truck</td> 
+                                     <td class="tabledata">KABEER DOST</td> 
+                                     <td class="tabledata">7510685178</td> 
+                                 <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                                 <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                             </tr>
+                             <tr>
+                                <td class="tabledata">KL33 P 2635</td>  
+                                 <td class="tabledata">Truck</td> 
+                                 <td class="tabledata">KABEER DOST</td> 
+                                 <td class="tabledata">7510685178</td> 
+                             <td class="tabledata"><span class="badge bg-success">Confirmed</span></td>
+                             <td class="tabledata"><a href="edit-vehicle.html"><i class="bx bxs-edit"></i></a></td>
+                         </tr>
                                 </tbody>
                             </table>
                             <div id="pagination" style="margin: 3em;">
