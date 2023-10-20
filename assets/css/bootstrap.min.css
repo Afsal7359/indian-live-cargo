@@ -14,3 +14,7 @@
   .tabledata{
     border: 1px solid;
   }
+  .boaderright{
+    border-right:solid 1px gray ;
+  }
+ 

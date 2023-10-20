@@ -26,7 +26,6 @@
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -272,264 +271,180 @@
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
-        <div class="main-content" style="padding-top: 8em;">
+        <div class="main-content" style="padding: 7em;" >
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                    
-                        <div class="card-header table-responsive" style="display: inline-block;">
-                        <div>    
-                            <h1 class="card-title mb-0" >List all Trip Sheet Cargos</h1>
+          
 
-                        </div>    
-                       
-                        <div class="justify-content-start" style=" padding-top: 1em;">
-                            <a style="display: inline-block;">    <button type="button" class="btn btn-success btn-border p-1 shadow" data-bs-toggle="modal" data-bs-target="#varyingcontentModal" data-bs-whatever="@mdo">Change Status</button>
-                            </a>
-                            <a href="All-tripsheet.html" style="padding-left: 49em;"><button type="button" class="btn btn-success btn-border p-1 shadow">Back</button></a>
+                    <h2>Update Trip Sheet</h2><br><br>
+                    <form action="#" method="post">
+
+                        <div style="width: 55em;height: 4em;justify-content: center; background-color:#ffffff; padding: 1em; margin-bottom: 3em;"><h3>Trip Details</h3></div>
+
+                        <!-- First row -->
+                        <div>
+                        <div style="width: 18em; display:inline-block;">
+                         <label for="exampleInputdate" class="form-label">Trip Date</label>
+                            <input type="date" class="form-control" id="exampleInputdate">
                         </div>
+                        <div style="width: 18em; display:inline-block;">
+                            <label for="exampleInputtime" class="form-label">Trip Time</label>
+                            <input type="time" class="form-control" id="exampleInputtime" value="08:56 AM">
                         </div>
+                        <div style="width: 18em; display:inline-block;">
+                            <label for="exampleInputdate" class="form-label">Estimated Arrival Date</label>
+                            <input type="date" class="form-control" id="exampleInputdate">
+                        </div>
+                        <div>
 
 
- 
-<!-- Varying modal content -->
-<div class="modal fade" id="varyingcontentModal" tabindex="-1" aria-labelledby="varyingcontentModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="varyingcontentModalLabel">Update Status</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Status</label>
-                        <select class="form-select mb-3" aria-label="Default select example">
-                            <option value="1">Active</option>
-                            <option value="2">Inactive</option>
-                        </select>
+                     <!-- second Row -->
+                     <div style="padding-top: 3em;">
+                    <div style="width: 18em; display:inline-block;">
+                        <label for="basiInput" class="form-label">Header</label>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option value="1">Bike</option>
+                        <option value="2">Truck</option>
+                    </select>
+                   </div>
+
+                   <div style="width: 18em; display:inline-block;">
+                    <label for="basiInput" class="form-label">Vehicle Number</label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option value="1">Bike</option>
+                    <option value="2">Truck</option>
+                </select>
+               </div>
+
+                    <div  style="width: 18em; display:inline-block;">
+                        <label for="formtextInput" class="form-label">Driver Name</label>
+                        <input type="text" class="form-control" id="formtextInput" placeholder="Driver Name..">
                     </div>
+                </div>
+
+
+                   <!-- Third Row -->
                     <div style="padding-top: 2em;">
-                    <button type="submit" class="btn btn-success btn-border p-1 shadow">Submit</button>
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <div style="width: 18em; display:inline-block;" >
+                        <label for="formtextInput" class="form-label">Driver Mob</label>
+                        <input type="text" class="form-control" id="formtextInput" placeholder="Driver Mob..">
                     </div>
-                </form>
-            </div>
-           
-        </div>
-    </div>
-  </div>
-
-
-  <div class="card-body">
-    <div class="table-responsive">
-        <!-- Striped Rows -->
-        <table class="table table-success table-striped align-middle table-nowrap mb-0">
-            <thead>
-                <tr class="thbig">
-                    <th>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="formCheck1">
-                        </div>SELECT ALL</th>
-                       
-                           
-                            <th>SL NO</th>
-                            <th>SORT ORDER</th>
-                            <th>CARGO NAME</th>
-                            <th>TRACKING NUMBER</th>
-                            <th>TRIP NUMBER</th>
-                            <th># NO</th>
-                            <th>INVOICE NUMBER</th>
-                            <th>PCS</th>
-                            <th>WEIGHT</th>
-                            <th>DISTRICT</th>
-                            <th>MOB.NUMBER</th>
-                            <th>STATUS</th>
-                            <th>ACTIONS</th>
-
-                                </tr>
-                        </thead>
-                        <tbody id="tablebody" >
-                            <tr>
-                                <td class="boaderright"><div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="formCheck1">
-                                </div></td>
-                                <td class="boaderright">1</td>
-                                <td class="boaderright">1</td>
-                                <td class="boaderright">ABC CARGO</td>  
-                                <td class="boaderright">EARKA15087</td> 
-                                <td class="boaderright">ABC UB 77</td> 
-                                <td class="boaderright"></td>
-                                <td class="boaderright">EARKA15087</td> 
-                                <td class="boaderright">1</td>
-                                <td class="boaderright">33</td>
-                                <td class="boaderright">MLP</td>
-                                <td class="boaderright">7510685178</td> 
-                            <td class="boaderright"><span class="badge bg-success">Status</span></td>
-                            <td class="boaderright"> 
-                             <div class="d-flex">   
-                                <div >
-                                    <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
-                               </div>
-                               <div style="padding-left: 1em;">
-                                    <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-                               </div>
-                        </div>
-                        </td>
-                        </tr>
-                        <tr>
-                            <td class="boaderright"><div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="formCheck1">
-                            </div></td>
-                            <td class="boaderright">1</td>
-                            <td class="boaderright">1</td>
-                            <td class="boaderright">ABC CARGO</td>  
-                            <td class="boaderright">EARKA15087</td> 
-                            <td class="boaderright">ABC UB 77</td> 
-                            <td class="boaderright"></td>
-                            <td class="boaderright">EARKA15087</td> 
-                            <td class="boaderright">1</td>
-                            <td class="boaderright">33</td>
-                            <td class="boaderright">MLP</td>
-                            <td class="boaderright">7510685178</td> 
-                        <td class="boaderright"><span class="badge bg-success">Status</span></td>
-                        <td class="boaderright"> 
-                         <div class="d-flex">   
-                            <div >
-                                <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
-                           </div>
-                           <div style="padding-left: 1em;">
-                                <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-                           </div>
+                    <div   style="width: 26em; display:inline-block;">
+                        <label for="formtextInput" class="form-label">Helper Name</label>
+                        <input type="text" class="form-control" id="formtextInput" placeholder="Helper Name..">
                     </div>
-                    </td>
-                    </tr>
-                    <tr>
-                        <td class="boaderright"><div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="formCheck1">
-                        </div></td>
-                        <td class="boaderright">1</td>
-                        <td class="boaderright">1</td>
-                        <td class="boaderright">ABC CARGO</td>  
-                        <td class="boaderright">EARKA15087</td> 
-                        <td class="boaderright">ABC UB 77</td> 
-                        <td class="boaderright"></td>
-                        <td class="boaderright">EARKA15087</td> 
-                        <td class="boaderright">1</td>
-                        <td class="boaderright">33</td>
-                        <td class="boaderright">MLP</td>
-                        <td class="boaderright">7510685178</td> 
-                    <td class="boaderright"><span class="badge bg-success">Status</span></td>
-                    <td class="boaderright"> 
-                     <div class="d-flex">   
-                        <div >
-                            <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
-                       </div>
-                       <div style="padding-left: 1em;">
-                            <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-                       </div>
-                </div>
-                </td>
-                </tr>
-                <tr>
-                    <td class="boaderright"><div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" id="formCheck1">
-                    </div></td>
-                    <td class="boaderright">1</td>
-                    <td class="boaderright">1</td>
-                    <td class="boaderright">ABC CARGO</td>  
-                    <td class="boaderright">EARKA15087</td> 
-                    <td class="boaderright">ABC UB 77</td> 
-                    <td class="boaderright"></td>
-                    <td class="boaderright">EARKA15087</td> 
-                    <td class="boaderright">1</td>
-                    <td class="boaderright">33</td>
-                    <td class="boaderright">MLP</td>
-                    <td class="boaderright">7510685178</td> 
-                <td class="boaderright"><span class="badge bg-success">Status</span></td>
-                <td class="boaderright"> 
-                 <div class="d-flex">   
-                    <div >
-                        <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
                    </div>
-                   <div style="padding-left: 1em;">
-                        <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-                   </div>
-            </div>
-            </td>
-            </tr>
-            <tr>
-                <td class="boaderright"><div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="formCheck1">
-                </div></td>
-                <td class="boaderright">1</td>
-                <td class="boaderright">1</td>
-                <td class="boaderright">ABC CARGO</td>  
-                <td class="boaderright">EARKA15087</td> 
-                <td class="boaderright">ABC UB 77</td> 
-                <td class="boaderright"></td>
-                <td class="boaderright">EARKA15087</td> 
-                <td class="boaderright">1</td>
-                <td class="boaderright">33</td>
-                <td class="boaderright">MLP</td>
-                <td class="boaderright">7510685178</td> 
-            <td class="boaderright"><span class="badge bg-success">Status</span></td>
-            <td class="boaderright"> 
-             <div class="d-flex">   
-                <div >
-                    <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
-               </div>
-               <div style="padding-left: 1em;">
-                    <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-               </div>
-        </div>
-        </td>
-        </tr>
-        <tr>
-            <td class="boaderright"><div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="formCheck1">
-            </div></td>
-            <td class="boaderright">1</td>
-            <td class="boaderright">1</td>
-            <td class="boaderright">ABC CARGO</td>  
-            <td class="boaderright">EARKA15087</td> 
-            <td class="boaderright">ABC UB 77</td> 
-            <td class="boaderright"></td>
-            <td class="boaderright">EARKA15087</td> 
-            <td class="boaderright">1</td>
-            <td class="boaderright">33</td>
-            <td class="boaderright">MLP</td>
-            <td class="boaderright">7510685178</td> 
-        <td class="boaderright"><span class="badge bg-success">Status</span></td>
-        <td class="boaderright"> 
-         <div class="d-flex">   
-            <div >
-                <a href="javascript:void(0);" class="link-dark fs-19"><i class="bx bxs-edit"></i></a>
-           </div>
-           <div style="padding-left: 1em;">
-                <a href="" class="link-dark fs-19"><i class="bx bx-trash"></i></a>
-           </div>
-    </div>
-    </td>
-    </tr>
-               
-              
-                        
-                        </tbody>
-                    </table>
-                </div>
-                <div id="pagination" style="margin: 2em;"></div>
-            </div>
-                          
-                    </div>
                     
-                </div><!--end col-->
-                
-            </div><!--end row-->
-            
-            <div id="pagination" style="margin: 5em;">
-            </div>
+                   <!-- 4th row -->
+                   <div style="padding-top: 3em;">
+                   <div   style="width: 25em; display:inline-block;">
+                    <label for="formtextInput" class="form-label">Helper Mob</label>
+                    <input type="text" class="form-control" id="formtextInput" placeholder="Helper Mob..">
+                  </div>
+                  <div   style="width: 15em; display:inline-block;">
+                    <label for="formtextInput" class="form-label">Start KM</label>
+                    <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                  </div>
+                  <div   style="width: 15em; display:inline-block;">
+                    <label for="formtextInput" class="form-label">Stop KM</label>
+                    <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                  </div>
+                </div>
+
+                    <!-- 5th row -->
+
+                    <div style="padding-top: 3em;">
+                        <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Total KM</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Total Rent</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                    </div>
+
+                    <!-- 6th row -->
+                    
+                        <div style="width: 18em; padding-top: 3em;">
+                            <label for="basiInput" class="form-label">Select Destination</label>
+                        <select class="form-select mb-3" aria-label="Default select example">
+                            <option value="1">Bike</option>
+                            <option value="2">Truck</option>
+                        </select>
+                        </div>
+
+
+                   <!-- Expense Details -->
+                    <div style="width: 55em;height: 4em;justify-content: center; background-color:#ffffff; padding: 1em; margin-top: 5em;"><h3>Expense Details</h3></div>
+
+                    <!-- first row -->
+                    <div style="padding-top: 3em;">
+                        <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Diesel Amt</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Batha Amt</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Phone Exp</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                    </div>
+
+                    <!-- second row -->
+
+                    <div style="padding-top: 3em;">
+                        <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Toll Exp</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Food Amt</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Other Exp</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                    </div>
+
+
+                    <!-- Thrid Row -->
+
+                    <div style="padding-top: 3em;">
+                        <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Expense Total</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Advance Amt</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="0">
+                          </div>  
+                          <div   style="width: 18em; display:inline-block;">
+                            <label for="formtextInput" class="form-label">Balance Amt</label>
+                            <input type="text" class="form-control" id="formtextInput" placeholder="Balance Amt...">
+                          </div>  
+                    </div>
+
+
+                    <!-- 4th row -->
+                     
+                    <div style="width: 55em; padding-top: 3em;">
+                        <label for="basiInput" class="form-label">Status</label>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option value="1">Trip Created</option>
+                        <option value="2">Truck</option>
+                    </select>
+                    </div>
+
+
+
+                     <button type="submit" class="btn rounded-pill btn-danger waves-effect waves-light">Back</button>
+                     <button type="submit" class="btn rounded-pill btn-success waves-effect waves-light">Complete</button>
+                    </form>
+              
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -553,49 +468,12 @@
 
 
 
-    <script>
-        const tabledata = document.getElementById("tabledata");
-        const rows = tabledata.querySelectorAll("tr");
-        const perPage = 10;
-        let currentPage = 1;
-
-        function displayData(page) {
-            tabledata.innerHTML = "";
-            const start = (page - 1) * perPage;
-            const end = Math.min(rows.length, start + perPage);
-
-            for (let i = start; i < end; i++) {
-                tabledata.appendChild(rows[i]);
-            }
-        }
-
-        function updatePagination() {
-            const totalPages = Math.ceil(rows.length / perPage);
-            const paginationDiv = document.getElementById("pagination");
-            paginationDiv.innerHTML = "";
-
-            for (let i = 1; i <= totalPages; i++) {
-                const button = document.createElement("button");
-                button.textContent = i;
-                button.addEventListener("click", () => {
-                    currentPage = i;
-                    displayData(currentPage);
-                });
-                paginationDiv.appendChild(button);
-            }
-        }
-
-        // Initial display
-        displayData(currentPage);
-        updatePagination();
-    </script>
+   
    
 
    
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JAVASCRIPT -->
-
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
